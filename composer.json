@@ -1,0 +1,48 @@
+{
+    "name": "sonsofphp/event-sourcing-doctrine",
+    "type": "library",
+    "description": "Adds additional functionality to the Sons of PHP Event Sourcing library",
+    "keywords": [
+        "event-sourcing"
+    ],
+    "homepage": "https://github.com/SonsOfPHP/event-sourcing",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Joshua Estes",
+            "email": "joshua@sonsofphp.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/SonsOfPHP/sonsofphp/issues",
+        "forum": "https://github.com/orgs/SonsOfPHP/discussions",
+        "docs": "https://docs.sonsofphp.com"
+    },
+    "autoload": {
+        "psr-4": {
+            "SonsOfPHP\\Component\\EventSourcing\\Bridge\\Doctrine\\": ""
+        },
+        "exclude-from-classmap": [
+            "/Tests/"
+        ]
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": ">=7.4",
+        "doctrine/dbal": "^3.3",
+        "sonsofphp/event-sourcing": "^0.2@dev"
+    },
+    "extra": {
+        "sort-packages": true,
+        "branch-alias": {
+            "dev-main": "0.2.x-dev"
+        }
+    },
+    "funding": [
+        {
+            "type": "github",
+            "url": "https://github.com/sponsors/JoshuaEstes"
+        }
+    ]
+}
